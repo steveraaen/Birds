@@ -1,8 +1,21 @@
-var birds = ['parrot', 'duckling', 'osprey', 'owl', 'baby+owl', 'puffin', 'geese', 'swan', 'night+heron']
+var birds = ['parrot', 'duckling', 'osprey', 'owl', 'baby+owl', 'puffin', 'geese', 'swan','bird+crash', 'night+heron']
 var gifURL;
 var curBut;
+var newBird;
 //=======================================================================================
 // Create buttons from array and assign them the text value of the array member
+    $('#newBird').on('click', function(){
+
+    newBird = $('#newBut').val().trim();
+   /* newBird.addClass('buttons');*/
+    birds.push(newBird);
+    $('#btnBar').empty();
+    
+    renderButtons();
+    return false;
+})
+
+
 function renderButtons(){
     $('#btnBar').empty();
 for (let i = 0; i < birds.length;i++){
@@ -11,15 +24,24 @@ for (let i = 0; i < birds.length;i++){
             btn.addClass('buttons')
             btn.html(birds[i]);
             $('#btnBar').append(btn);
-}
+             console.log(btn);
+
+}return false;
 };
 renderButtons();
+
+//======================================================================================
+// Let user add a word to generate a new gif search button
+
+
+
 //======================================================================
 // Buttons are now rendered.  Logic to get gifs based on the button value
-    $('.buttons').on('click', function(){
+    $('#btnBar').on('click','.buttons', function(){
         $('#pictures').empty();
 // Define the clicked buttons html as the search query object
      curBut = $(this).html();
+     console.log(curBut)
 // Append it to the URL
       gifURL = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=' + curBut;
   
@@ -30,7 +52,6 @@ $.ajax({
     method: 'GET'
 }).done(function(response){
  console.log(response)
-
  
         for (let i = 0; i < response.data.length; i++){
              console.log(response.data[i].images.original.url);
