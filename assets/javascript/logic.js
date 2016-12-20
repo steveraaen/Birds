@@ -1,4 +1,4 @@
-var birds = ['parrot', 'duckling', 'osprey', 'owl', 'baby+owl', 'puffin', 'geese', 'swan','bird+crash', 'night+heron']
+var birds = ['parrot', 'duckling', 'osprey', 'owl', 'baby+owl', 'puffin', 'geese', 'swan','ducks', 'night+heron']
 var gifURL;
 var curBut;
 var newBird;
