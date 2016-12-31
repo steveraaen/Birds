@@ -5,8 +5,52 @@ body{
 img{
 	height: 140px;
 	width: 180px;
+	margin: 10px 10px 10px 10px;
 }
 #topRow{
-	background-color: #008080;
-	color: white;
+background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *//*background-color: #008080;*/
+font-family: 'Gloria Hallelujah', cursive;
+color: white;
 }
+#greeting{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+#pictures{
+background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-left: 30px;        
+}
+.buttons{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.pix {
+	height: 160px;
+	width: 200px;
+	text-align: center;
+	position: relative;	
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+.rating {
+    background-color: darkgray;
+    color: white;
+    opacity: 1;
+    padding-right: 2px;
+    padding-left: 2px;
+    top: 15px;
+    right: 100px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
