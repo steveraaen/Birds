@@ -37,7 +37,7 @@ h2{
 padding-left: 30px;  
 }
 .buttons{
-background-color: #575D63;
+background-color: #0A686B;
 font-family: 'Gloria Hallelujah', cursive;
 color: white;
 }
@@ -51,15 +51,15 @@ color: white;
 	float: left;
 }
 .rating {
-    background-color: #67B26F;
+    background-color: #0A686B;
     color: white;
-    opacity: 1;
+    opacity: .7;
 	text-shadow: all;
     top: 15px;
     right: 100px;
     position: absolute;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .container{
 margin-top: 10px;

@@ -77,7 +77,7 @@ $('#btnBar').on('click', '.buttons', function() {
 //=====================================================================
 // Append still images & ratings to the container, then append the container to existing div
             image.appendTo(wrapper);    
-            rating.appendTo(wrapper)
+            rating.addClass('img-rounded').appendTo(wrapper)
             wrapper.appendTo('#pictures')
               }
     });
