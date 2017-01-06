@@ -14,8 +14,12 @@ img{
 	font-family: 'Gloria Hallelujah', cursive;
 	color: white;
 }
+#nbl{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 18px;
+	color: black;
+}
 .birds{
-	background-image: "url('assets/images/Sports.png')";
 	background: #67B26F; /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #67B26F, #4ca2cd);
     background: -o-linear-gradient(right, #67B26F, #4ca2cd);
@@ -23,11 +27,17 @@ img{
 	font-family: 'Gloria Hallelujah', cursive;
 	color: white;
 }
+h5{
+	font-size: 22px;
+}
+h2{
+	font-size: 38;
+}
 #pictures{
 padding-left: 30px;  
 }
 .buttons{
-background-color: darkgray;
+background-color: #575D63;
 font-family: 'Gloria Hallelujah', cursive;
 color: white;
 }
@@ -41,13 +51,15 @@ color: white;
 	float: left;
 }
 .rating {
-    background-color: darkgray;
+    background-color: #67B26F;
     color: white;
     opacity: 1;
 	text-shadow: all;
     top: 15px;
     right: 100px;
     position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 .container{
 margin-top: 10px;
